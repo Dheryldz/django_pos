@@ -1,0 +1,14 @@
+{% load static %}
+
+<footer class="sticky-footer bg-white">
+    <div class="container my-auto">
+        <div class="copyright text-center my-auto">
+            <span>Copyright &copy; <a href="https://www.instagram.com/aceworldcomputer">Ace World Pontianak</a>  <strong id='year'></strong></span>
+        </div>
+    </div>
+    <script>
+        let year_el = document.getElementById('year');
+        let date = new Date()
+        year_el.innerText = date.getFullYear().toString();
+    </script>
+</footer>
